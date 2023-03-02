@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Hide input number arrows */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+
+
+.gradientNav {
+  background: rgb(255,79,171);
+  background: linear-gradient(0deg, rgba(255,79,171,1) 0%,  rgba(34,193,195,1) 85%)}
+
+  .on {
+    color: #000;
+  }
+  .off {
+    color: #ccc;
+  }
+  
+  .button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+  .pagination {
+    display: flex !important;
+    justify-content: center !important;
+    margin-top: 10px !important;
+  }
+  
+  
+  .pagination-item {
+    width: 1.3rem;
+    height: 1.3rem;
+    border-radius: 50%;
+    font-size: 1rem;
+    color: grey;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    background-color: #bebebe;
+  }
+
+  .active {
+    color: white !important;
+    background-color: #502b7c;
+  }
+  
